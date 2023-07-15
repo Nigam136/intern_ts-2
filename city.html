@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="city.js"></script>
+    <link rel="stylesheet" href="city.css" />
+  </head>
+  <body>
+    <form>
+      <label for="country">Country:</label>
+      <select id="country" onchange="updateStates()">
+        <option value="">Select</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="state">State:</label>
+      <select id="state" onchange="updateCities()" disabled>
+        <option value="">Select</option>
+      </select>
+
+      <label for="city">City:</label>
+      <select id="city" disabled>
+        <option value="">Select</option>
+      </select>
+    </form>
+  </body>
+</html>
